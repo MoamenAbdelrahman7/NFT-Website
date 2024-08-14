@@ -1,0 +1,772 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+
+}
+button:hover{
+    cursor: pointer;
+}
+
+
+.navbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f1f1f1;
+    padding: 32px 64px;
+    
+}
+
+.navbar .logo{
+    color: #0f2182;
+    font-weight: bolder;
+}
+.navbar .logo:hover{
+    filter: brightness(150%);
+    transition: all 0.3s ease-out;
+}
+.navbar .nav_links {
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+    margin-inline: 32px;
+    
+}
+.navbar .nav_links a:hover{
+    color: #737373;
+    transition: all 0.3s ;
+}
+.navbar .buttons .get_started{
+    background-color: #000;
+    color: #fff;
+    padding: 4px 10px;
+    border-radius: 6px;
+    margin-right: 10px;
+    outline: none;
+}
+.navbar .buttons .get_started:hover{
+    background-color: #fff;
+    color: #000;
+    transition: all 0.3s ;
+    
+
+}
+
+.navbar .buttons .login{
+    background-color: #f1f1f1;
+    border: none;
+    outline: none;
+    padding: 4px 10px;
+    margin-left: 10px ;
+    font-weight: 500;
+}
+.navbar .buttons .login:hover{
+    background-color: #2f476c;
+    color: #fff;
+    border-radius: 6px;
+    transition: all 0.3s ;
+}
+main{
+    background-color: #f1f1f1;
+    padding: 40px 64px;
+    
+}
+
+/* hero section */
+
+.hero{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 90px;
+    
+}
+.hero h1{
+    font-size: 60px;
+}
+.hero span h1{
+    color: #0f2182;
+}
+
+.hero p{
+    font-size: 16px;
+    margin: 32px 0;
+    text-wrap: balance;
+    max-width: 640px;
+}
+.hero a{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    background-color: #000;
+    color: #fff;
+    padding: 10px;
+    padding-right: 60px;
+    width: fit-content;
+    border-radius: 50px;
+    transition: background-color 0.5s , color 0.5s ;
+    
+}
+.hero a:hover{
+    cursor: pointer;
+    background-color: #2f476c;
+    transition: all 0.7s;
+}
+.hero .buy a:hover i{
+    transform: translate(125px) rotate(360deg) ;
+    
+    transition: all 0.5s ease-out ;
+}
+
+
+.hero a i{
+    background-color: #fff;
+    color: #000;
+    font-size: 20px;
+    padding: 8px;
+    font-weight: 500;
+    border-radius: 50%;
+    transition: transform 0.5s;
+}
+
+.hero .right img{
+    width:30rem;
+}
+
+/* sell section */
+section.sell{
+    padding-bottom: 50px;
+}
+section.sell h1{
+    font-size: 26px;
+}
+section.sell .items{
+    display: flex;
+    gap: 32px;
+    margin: 32px 12px;
+
+}
+section.sell .items .item{
+    border:1px solid #dbd9d9;
+    background-color: #fff;
+    padding: 14px 18px;
+    min-width: 30%;
+    border-radius: 18px;
+}
+section.sell .items .item i{
+    font-size: 26px;
+    font-weight: bold;
+    transition: transform 0.3s;
+}
+section.sell .items .item div.label:hover i{
+    transform: scale(1.3);
+    transition: all 0.3s ease-in;
+}
+section.sell .items .item div.label{
+    display: flex;
+    gap: 12px;
+    align-items: center;
+}
+
+section.sell .items .item div.label span{
+    font-weight: 500;
+}
+
+section.sell .items .item p{
+    padding: 12px 7px;
+}
+
+
+/* Super hot NFTs */
+.super_hot h2{
+    margin: 28px 0;
+}    
+.super_hot .tags{
+    display: flex;
+    gap: 16px;
+    margin: 16px 0;
+}
+.super_hot .tags a{
+    background-color: #dfdcdc;
+    padding: 8px 12px;
+    border: 1px solid transparent;
+    border-radius: 18px ;
+}
+.super_hot .tags a:hover{
+    background-color: #162a81;
+    color: #fff;
+    transition: all 0.3s;
+}
+
+.super_hot .items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+    margin: 32px;
+}
+.super_hot .items .item{
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    min-width: 22%;
+    border-radius: 16px;
+    background-color: #fff;
+    padding: 16px;
+}
+.super_hot .items .item img{
+    width: 100%;
+    border-radius: 12px;
+}
+
+.super_hot .items .item a.product_title{
+    font-weight: bold;
+}
+
+.super_hot .items .item .info{
+    display: flex;
+    justify-content: space-between;
+}
+.super_hot .items .item .info i{
+    color: #274cfe;
+    font-size: 22px;
+}
+.super_hot .items .item .info span{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.super_hot .items .item .info span span,
+.super_hot .items .item .info p,
+.super_hot .items .item .bid p,
+.super_hot .items .item .bid a{
+    font-size: 11px;
+}
+.super_hot .items .item .info span span{
+    color: #274cfe ;
+}
+
+.super_hot .items .item .bid a{
+    color: #274cfe ;
+    font-weight: bold;
+    padding: 6px 10px;
+    border-radius: 12px;
+}
+.super_hot .items .item .bid a:hover{
+    background-color: #000;
+    color: #fff;
+    transition: all 0.3s ;
+    
+}
+
+.super_hot .items .item .info p{
+    color: #ccc;
+}
+
+.super_hot .items .item .bid{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.super_hot .items .item .bid p,
+a.view_more{
+    background-color: #edecec;
+    padding: 5px 7px;
+    border: 1px solid transparent;
+    border-radius: 18px ;
+}
+
+
+a.view_more{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);   
+}
+a.view_more:hover{
+    background-color: #162a81;
+    color: #fff;
+    transition: all 0.3s;
+}
+
+
+/* best sellers */
+.best_sellers{
+    padding: 60px 0;
+}
+.best_sellers h3{
+    font-size: 26px;
+    margin: 32px 0;
+}
+.best_sellers .items {
+    display: flex;
+    gap: 32px;
+}
+.best_sellers .items .item{
+    display: flex;
+    gap: 16px;
+    background-color: #fff;
+    padding: 14px;
+    width: 24%;
+    border-radius: 16px;
+}
+.best_sellers .items .item img{
+    width: 50px;
+}
+.best_sellers .items .item .info{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+}
+.best_sellers .items .item .info h6{
+    font-size: 15px;
+}
+.best_sellers .items .item .info p{
+    font-size: 12px;
+}
+
+footer {
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    height: 200px;
+    padding: 70px;
+    justify-content: space-between;
+    align-items: center;
+}
+footer .nav_links a, footer p{
+    font-size: 12px;
+
+}
+footer h1{
+    width: 400px;
+    font-size: 32px;
+}
+
+footer .nav_links{
+    display: flex;
+    gap: 12px;
+    justify-content: flex-end;
+}
+
+footer .nav_links a{
+    color: #9b9ea1;
+}
+footer .socail_icons{
+    display: flex;
+    justify-content: flex-end;
+    gap: 12px;
+    font-size: 24px;
+}
+footer .socail_icons a{
+    color: #dfdcdc;
+}
+
+footer nav p{
+    color: #9b9ea1;
+    align-self: flex-end;
+}
+
+footer nav{
+    display: flex;
+    flex-direction: column;
+    gap: 19px;
+    
+}
+
+footer .nav_links a:hover{
+    color: #edecec;
+    transition: all 0.3s;
+}
+footer .socail_icons a:hover{
+    color: #b3b1b1;
+    scale: 1.3;
+    transition: all 0.3s;
+}
+
+
+/* Responsivness */
+@media screen and (max-width:768px){
+    /* navbar */
+    .navbar{
+        padding: 32px 50px;
+    }
+    
+    .navbar .nav_links {
+        gap: 35px;        
+        margin-inline: 28px;
+        font-size: 14px;
+        
+    }
+    .navbar .buttons .get_started{
+        font-size: 12px;
+    }
+    
+    .navbar .buttons .login{
+        font-size: 12px;
+    }
+
+    /* main */
+    main{
+        padding: 28px 50px;
+        
+    }
+    
+    /* hero section */
+
+    
+    .hero h1{
+        font-size: 43px;
+    }
+
+    .hero p{
+        font-size: 14px;
+        margin: 28px 0;
+        max-width: 600px;
+    }
+    .hero a{
+       
+        gap: 10px;
+        padding:8px;
+        padding-right: 54px;        
+    }
+    .hero .buy a:hover i{
+        transform: translate(123px) rotate(360deg) ;
+        
+    }
+    .hero a i{
+        
+        font-size: 16px;
+        padding: 4px;
+
+    }
+
+    .hero .right img{
+        width:22rem;
+    }
+
+    /* sell section */
+    section.sell{
+        padding-bottom: 46px;
+    }
+    section.sell h1{
+        font-size: 23px;
+    }
+    section.sell .items{
+        display: flex;
+        gap: 26px;
+        margin: 26px 12px;
+        flex-wrap: wrap;
+
+    }
+    section.sell .items .item{
+        min-height: 140px;
+        width: 47%;
+    }
+    section.sell .items .item i{
+        font-size: 24px;
+    }
+
+    section.sell .items .item div.label{
+        gap: 10px;
+    }
+
+  
+
+    section.sell .items .item p{
+        padding: 12px 7px;
+        font-size: 14px;
+    }
+
+
+    /* Super hot NFTs */
+    .super_hot h2{
+        margin: 23px 0;
+    }    
+    .super_hot .tags{
+        gap: 14px;
+        margin: 14px 0;
+    }
+    .super_hot .tags a{
+        font-size: 14px;
+    }
+    
+
+    .super_hot .items {
+       
+        gap: 28px;
+        margin: 32px;
+        flex-wrap: wrap;
+
+    }
+    .super_hot .items .item{
+        width: 47%;
+        
+    }
+    
+
+    /* best sellers */
+    .best_sellers{
+        padding: 50px 0;
+    }
+    .best_sellers h3{
+        font-size: 23px;
+        margin: 30px 0;
+    }
+    .best_sellers .items {
+        gap: 4%;
+    }
+    .best_sellers .items .item{
+        gap: 14px;
+        padding: 12px;
+        width: 24%;
+    }
+    .best_sellers .items .item img{
+        width: 46px;
+    }
+    .best_sellers .items .item .info{
+        gap: 8px;
+    }
+    
+    /* footer */
+
+    footer {
+        padding: 60px;
+    }
+    footer .nav_links a, footer p{
+        font-size: 10px;
+
+    }
+    footer h1{
+        width: 400px;
+        font-size: 28px;
+    }
+    footer .nav_links{
+        gap: 8px;
+    }
+
+    
+
+    footer nav{
+        gap: 15px;
+    }
+
+
+
+}
+
+
+/* mobile */
+
+@media screen and (max-width: 390px){
+
+    /* navbar */
+    .navbar{
+        padding: 26px 8px;
+    }
+    .navbar .logo{
+        font-size: 0px;
+    }
+    
+    .navbar .nav_links {
+        gap: 14px;        
+        margin-inline: 14px;
+        font-size: 11px;
+        
+    }
+    
+    .navbar .buttons .get_started{
+        font-size: 10px;
+        margin: 0;
+    }
+    
+    .navbar .buttons .login{
+        font-size: 10px;
+        margin: 0;
+    }
+
+    /* main */
+    main{
+        padding: 22px 30px;
+        
+    }
+
+    
+    /* hero section */
+    .hero{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    
+    .hero h1{
+        font-size: 30px;
+        margin-top:12px ;
+    }
+
+    .hero p{
+        font-size: 12px;
+        margin: 22px 0;
+        max-width: 500px;
+    }
+    .hero a{
+       
+        gap: 6px;
+        padding:5px;
+        padding-right: 40px;        
+    }
+    .hero .buy a:hover i{
+        transform: translate(103px) rotate(360deg) ;
+    }
+    .hero a i{
+        padding: 2px;
+
+    }
+
+    .hero .right img{
+        width:18rem;
+    }
+
+    /* sell section */
+    section.sell{
+        padding-bottom: 36px;
+    }
+    section.sell h1{
+        font-size: 20px;
+    }
+    section.sell .items{
+        gap: 20px;
+    }
+    section.sell .items .item{
+        width: 100%;
+    }
+    section.sell .items .item i{
+        font-size: 22px;
+    }
+
+    section.sell .items .item div.label{
+        gap: 8px;
+        font-size: 14px;
+    }
+
+  
+
+    section.sell .items .item p{
+        padding: 12px 7px;
+        font-size: 12px;
+    }
+
+
+    /* Super hot NFTs */
+    .super_hot h2{
+        margin: 20px 0;
+        font-size: 20px;
+    }    
+    .super_hot .tags{
+        gap: 10px;
+        flex-wrap: wrap;
+    }
+    .super_hot .tags a{
+        font-size: 12px;
+    }
+    
+
+    .super_hot .items {
+       flex-direction: column;
+        gap: 24px;
+        margin: 6px;
+
+    }
+    .super_hot .items .item{
+        width: 100%;
+        
+    }
+    a.view_more{
+        margin-top: 20px;
+    }
+    
+
+    /* best sellers */
+  
+    .best_sellers h3{
+        font-size: 20px;
+    }
+    .best_sellers .items {
+        gap: 10px;
+        flex-wrap: wrap;
+        padding: 0;
+    }
+    .best_sellers .items .item{
+        gap: 14px;
+        padding: 12px;
+        width: 147px;
+
+    }
+    .best_sellers .items .item img{
+        width: 46px;
+    }
+    .best_sellers .items .item .info h6{
+        font-size: 13px;
+    }
+    .best_sellers .items .item .info p{
+        font-size: 9px;
+    }
+    .best_sellers .items .item .info{
+        gap: 6px;
+    }
+    
+    /* footer */
+
+    footer {
+        padding: 40px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 16px;
+    }
+    footer .nav_links a, footer p{
+        font-size: 8px;
+        
+
+    }
+    footer h1{
+        width: 200px;
+        font-size: 18px;
+
+    }
+    footer .nav_links{
+        gap: 8px;
+
+        
+    }
+
+    footer nav p{
+        align-self: flex-start;
+    }
+
+    footer nav{
+        gap: 15px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+
+
+
+
+}
+
+
+
